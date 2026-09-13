@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">WRAPPED.CO candle label concept</title>
+  <desc id="desc">Minimal black candle label with a ribbon flame and editable fragrance name.</desc>
+  <rect width="900" height="1100" fill="#141210"/>
+  <rect x="52" y="52" width="796" height="996" rx="4" fill="none" stroke="#3A342E" stroke-width="3"/>
+  <g transform="translate(450 250)">
+    <path d="M0-72 C43-40 41-5 4 17 C-21 32-23 53-6 76 C-59 45-59 6-19-20 C7-35 12-51 0-72Z" fill="#B08A5A"/>
+    <path d="M-19-20 C7-7 21 9 4 17 C-21 32-23 53-6 76 C8 50 28 35 29 11 C30-3 11-15-19-20Z" fill="#E1C39E" opacity=".78"/>
+  </g>
+  <text x="450" y="435" fill="#F3EDE3" text-anchor="middle" font-family="Cormorant Garamond, Garamond, Georgia, serif" font-size="63" letter-spacing="15">WRAPPED.CO</text>
+  <line x1="402" y1="498" x2="498" y2="498" stroke="#B08A5A" stroke-width="2"/>
+  <text x="450" y="665" fill="#F3EDE3" text-anchor="middle" font-family="Cormorant Garamond, Garamond, Georgia, serif" font-size="78" letter-spacing="9">SCENT NAME</text>
+  <text x="450" y="732" fill="#B9ADA0" text-anchor="middle" font-family="Manrope, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="7">SCENTED CANDLE</text>
+  <g fill="#B9ADA0" text-anchor="middle" font-family="Manrope, Helvetica, Arial, sans-serif" font-size="18" letter-spacing="4">
+    <text x="450" y="898">HAND POURED IN WORCESTER, MA</text>
+    <text x="450" y="942">10 OZ / 283 G</text>
+  </g>
+</svg>
