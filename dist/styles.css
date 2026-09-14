@@ -73,7 +73,7 @@ button { font: inherit; }
   letter-spacing: .27em;
   line-height: 1;
 }
-.brand-mark { width: 21px; height: 31px; color: var(--brass); }
+.brand-mark { width: 21px; height: 31px; object-fit: contain; }
 .primary-nav { display: flex; align-items: center; gap: clamp(26px, 3.2vw, 54px); }
 .primary-nav a,
 .header-cta {
@@ -231,9 +231,9 @@ h1 { margin-bottom: 38px; font-size: clamp(58px, 6.1vw, 106px); letter-spacing: 
 .story { display: grid; grid-template-columns: 1.12fr .88fr; min-height: 760px; background: var(--ink); color: var(--paper); }
 .story-image {
   min-height: 620px;
-  background-image: linear-gradient(90deg, transparent 65%, rgba(21,19,16,.6)), url('assets/wrappedco-candle-collection.png');
+  background-image: linear-gradient(90deg, transparent 65%, rgba(21,19,16,.68)), url('assets/wrappedco-collection-system.png');
   background-size: cover;
-  background-position: 12% center;
+  background-position: center;
 }
 .story-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(70px, 8vw, 140px); }
 .story-copy .section-index { color: var(--brass-light); }
