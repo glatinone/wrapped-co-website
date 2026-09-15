@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#151310">
-  <meta name="description" content="WRAPPED.CO creates small-batch scented candles in Worcester, Massachusetts. Thoughtful fragrance for the rooms you live in.">
+  <meta name="description" content="Shop small-batch WRAPPED.CO scented candles, hand-poured in Worcester, Massachusetts.">
   <title>WRAPPED.CO | Scented Candles from Worcester, MA</title>
   <link rel="icon" type="image/svg+xml" href="assets/wrappedco-ribbon-mark.svg">
   <link rel="preload" href="assets/wrappedco-ivory-wrap.png" as="image">
@@ -13,163 +13,88 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <div class="announcement">
-    <p>Small-batch candles from Worcester, Massachusetts</p>
-  </div>
-
+  <div class="announcement">Small-batch candles, hand-poured in Worcester, Massachusetts</div>
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="WRAPPED.CO home">
       <img class="brand-mark" src="assets/wrappedco-ribbon-mark.svg" alt="" width="21" height="31">
       <span>WRAPPED.CO</span>
     </a>
-
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-      <span class="menu-toggle-label">Menu</span>
-      <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
-    </button>
-
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
-      <a href="#collection">Collection</a>
-      <a href="#story">Our story</a>
-      <a href="#care">Candle care</a>
-      <a href="#contact">Contact</a>
+      <a href="#scents">Scents</a><a href="#size">Size</a><a href="#story">Our story</a>
     </nav>
-
-    <a class="header-cta" href="mailto:hello@wrapped.co?subject=WRAPPED.CO%20launch%20updates">Launch updates</a>
+    <a class="header-order" href="#order">Order now</a>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span></span>Scented candles</p>
-        <h1 id="hero-title">Scent, wrapped<br>in a moment.</h1>
-        <p class="hero-intro">Thoughtfully poured candles made to bring warmth, depth, and a sense of place to everyday rooms.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#collection">Explore the first collection</a>
-          <a class="text-link" href="#story">Why we make them <span aria-hidden="true">↘</span></a>
-        </div>
-        <dl class="hero-facts" aria-label="Product highlights">
-          <div><dt>Made in</dt><dd>Worcester, MA</dd></div>
-          <div><dt>Approach</dt><dd>Small batch</dd></div>
-          <div><dt>Release</dt><dd>Coming soon</dd></div>
-        </dl>
-      </div>
+    <section class="shop-hero" id="top" aria-labelledby="hero-title">
       <figure class="hero-media">
-        <img src="assets/wrappedco-ivory-wrap.png" alt="A black WRAPPED.CO candle and presentation box with warm ivory paper wraps and the gold ribbon mark" width="1254" height="1254">
-        <figcaption>Ivory Wrap packaging concept</figcaption>
+        <img src="assets/wrappedco-ivory-wrap.png" alt="A black WRAPPED.CO candle and box with warm ivory wraps and the gold ribbon mark" width="1254" height="1254">
+        <figcaption>Opening collection</figcaption>
       </figure>
-    </section>
-
-    <section class="intro-statement section-pad" aria-labelledby="statement-title">
-      <p class="section-index">01 / The idea</p>
-      <div>
-        <h2 id="statement-title">Fragrance should live with you, not compete with the room.</h2>
-        <p>WRAPPED.CO is built around a quieter kind of atmosphere. Each candle begins with a clear mood, a balanced scent profile, and materials chosen for a clean, even burn.</p>
+      <div class="hero-shop">
+        <p class="eyebrow">The first pour</p>
+        <h1 id="hero-title">Choose your scent.</h1>
+        <p class="hero-intro">Three fragrance profiles. One considered size. Made in small batches in Worcester.</p>
+        <fieldset class="quick-pick">
+          <legend><span>01</span> Scent</legend>
+          <div class="quick-pick-grid">
+            <button class="scent-choice is-selected" type="button" data-scent="No. 01 Warm Cocoa" aria-pressed="true"><strong>Warm Cocoa</strong><small>Cocoa · vanilla · smoked sugar</small></button>
+            <button class="scent-choice" type="button" data-scent="No. 02 Cedar Tea" aria-pressed="false"><strong>Cedar Tea</strong><small>Cedar · amber · black tea</small></button>
+            <button class="scent-choice" type="button" data-scent="No. 03 Clean Linen" aria-pressed="false"><strong>Clean Linen</strong><small>Bergamot · linen · white musk</small></button>
+          </div>
+        </fieldset>
+        <div class="size-pick"><p><span>02</span> Size</p><strong>10 oz <i>/</i> 283 g</strong><small>Opening release size</small></div>
+        <a class="primary-button" href="#order" data-order-cta>Order Warm Cocoa <span aria-hidden="true">↗</span></a>
+        <p class="order-note">Order requests are confirmed personally by WRAPPED.CO.</p>
       </div>
     </section>
 
-    <section class="collection section-pad" id="collection" aria-labelledby="collection-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow"><span></span>The opening edit</p>
-          <h2 id="collection-title">Three ways to set the room.</h2>
+    <section class="scents section-shell" id="scents" aria-labelledby="scents-title">
+      <div class="section-heading"><p class="section-number">01 / Scents</p><div><h2 id="scents-title">Pick the mood.</h2><p>Each scent is designed to feel clear in a room, never overwhelming.</p></div></div>
+      <div class="scent-list">
+        <article class="scent-item scent-dark"><p>No. 01 · Gourmand</p><h3>Warm Cocoa</h3><ul><li>Cocoa</li><li>Vanilla bean</li><li>Smoked sugar</li></ul><button type="button" data-choose-scent="No. 01 Warm Cocoa">Choose this scent</button></article>
+        <article class="scent-item scent-brass"><p>No. 02 · Woods</p><h3>Cedar Tea</h3><ul><li>Cedar</li><li>Amber</li><li>Black tea</li></ul><button type="button" data-choose-scent="No. 02 Cedar Tea">Choose this scent</button></article>
+        <article class="scent-item scent-ivory"><p>No. 03 · Clean</p><h3>Clean Linen</h3><ul><li>Bergamot</li><li>Washed linen</li><li>White musk</li></ul><button type="button" data-choose-scent="No. 03 Clean Linen">Choose this scent</button></article>
+      </div>
+    </section>
+
+    <section class="size-section" id="size" aria-labelledby="size-title">
+      <div class="size-image" role="img" aria-label="WRAPPED.CO cylindrical candle packaging with ivory labels"></div>
+      <div class="size-copy">
+        <p class="section-number">02 / Size</p><h2 id="size-title">10 oz <span>/ 283 g</span></h2>
+        <p>One size keeps the first collection simple. A black vessel, clean label, and a format made for everyday rooms.</p>
+        <dl><div><dt>Vessel</dt><dd>Black glass</dd></div><div><dt>Production</dt><dd>Small batch</dd></div><div><dt>Made in</dt><dd>Worcester, MA</dd></div></dl>
+        <a class="text-link" href="#order">Choose a scent and order <span aria-hidden="true">↘</span></a>
+      </div>
+    </section>
+
+    <section class="story section-shell" id="story" aria-labelledby="story-title">
+      <p class="section-number">03 / Our story</p>
+      <div><h2 id="story-title">A quieter kind of home fragrance.</h2><p>WRAPPED.CO began in Worcester with a simple idea: a candle can make a room feel special without asking for attention. We make each batch with a clear scent profile and thoughtful details.</p></div>
+    </section>
+
+    <section class="order-section" id="order" aria-labelledby="order-title">
+      <div class="order-intro"><p class="eyebrow">Order</p><h2 id="order-title">Your candle,<br>wrapped.</h2><p>Select the details below. We will open an email with your order request ready to send.</p></div>
+      <form class="order-form" data-order-form>
+        <label><span>Scent</span><select name="scent" data-order-scent><option>No. 01 Warm Cocoa</option><option>No. 02 Cedar Tea</option><option>No. 03 Clean Linen</option></select></label>
+        <div class="form-row">
+          <label><span>Size</span><select name="size"><option>10 oz / 283 g</option></select></label>
+          <label><span>Quantity</span><select name="quantity"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
         </div>
-        <p>The first release moves from warm and familiar to dry woods and clean linen. Final scent names and release details will be announced at launch.</p>
-      </div>
-
-      <div class="scent-grid">
-        <article class="scent-card scent-card-dark">
-          <div class="scent-number">No. 01</div>
-          <div class="scent-orbit" aria-hidden="true"><span></span></div>
-          <div class="scent-card-copy">
-            <p class="scent-family">Gourmand</p>
-            <h3>Warm, without<br>feeling sweet.</h3>
-            <p>Cocoa, vanilla bean, and a trace of smoked sugar.</p>
-          </div>
-        </article>
-
-        <article class="scent-card scent-card-brass">
-          <div class="scent-number">No. 02</div>
-          <div class="scent-orbit" aria-hidden="true"><span></span></div>
-          <div class="scent-card-copy">
-            <p class="scent-family">Woods</p>
-            <h3>Dry woods for<br>slow evenings.</h3>
-            <p>Cedar, amber, and the soft tannin of black tea.</p>
-          </div>
-        </article>
-
-        <article class="scent-card scent-card-light">
-          <div class="scent-number">No. 03</div>
-          <div class="scent-orbit" aria-hidden="true"><span></span></div>
-          <div class="scent-card-copy">
-            <p class="scent-family">Clean</p>
-            <h3>Fresh air, brought<br>indoors.</h3>
-            <p>Bergamot, washed linen, and a sheer white musk.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="collection-note">
-        <p>Want first access?</p>
-        <a class="text-link" href="mailto:hello@wrapped.co?subject=WRAPPED.CO%20first%20access">Request a launch note <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="story" id="story" aria-labelledby="story-title">
-      <div class="story-image" role="img" aria-label="Close detail of WRAPPED.CO candle packaging"></div>
-      <div class="story-copy">
-        <p class="section-index">02 / Our story</p>
-        <h2 id="story-title">Made with attention. Designed to stay.</h2>
-        <p>WRAPPED.CO started with a simple idea: home fragrance can feel special without feeling precious. The design is restrained, the scent is considered, and every detail has a reason to be there.</p>
-        <p>Based in Worcester, Massachusetts, we are developing our first small-batch collection for homes that favor warmth, texture, and a little quiet.</p>
-        <a class="text-link text-link-light" href="mailto:hello@wrapped.co?subject=Hello%20WRAPPED.CO">Start a conversation <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="care section-pad" id="care" aria-labelledby="care-title">
-      <div class="care-heading">
-        <p class="section-index">03 / Candle care</p>
-        <h2 id="care-title">A better burn starts with the first light.</h2>
-      </div>
-      <div class="care-list">
-        <details open>
-          <summary><span>01</span>Set the first burn</summary>
-          <p>Let the wax melt evenly to the edge of the vessel on the first burn. This helps prevent tunneling later.</p>
-        </details>
-        <details>
-          <summary><span>02</span>Trim the wick</summary>
-          <p>Before each use, trim the wick to about 1/4 inch. A shorter wick helps the candle burn evenly and keeps the flame controlled.</p>
-        </details>
-        <details>
-          <summary><span>03</span>Know when to stop</summary>
-          <p>Do not burn a candle for more than four hours at a time. Stop using it when about 1/2 inch of wax remains.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <p class="eyebrow eyebrow-light"><span></span>Stay close</p>
-      <h2 id="contact-title">The first pour is almost ready.</h2>
-      <p>Join the launch list for release timing, scent notes, and local Worcester availability.</p>
-      <a class="button button-light" href="mailto:hello@wrapped.co?subject=Add%20me%20to%20WRAPPED.CO%20launch%20updates">Email us for launch updates</a>
-      <div class="contact-meta">
-        <span>Worcester, Massachusetts</span>
-        <a href="mailto:hello@wrapped.co">hello@wrapped.co</a>
-        <a href="https://www.instagram.com/wrapped.co" rel="noreferrer">Instagram</a>
-      </div>
+        <label><span>Your name</span><input type="text" name="customerName" autocomplete="name" required placeholder="Name"></label>
+        <label><span>Email</span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label><span>Order note <small>Optional</small></span><textarea name="note" rows="3" placeholder="Pickup, delivery, or gift note"></textarea></label>
+        <button class="submit-button" type="submit">Send order request <span aria-hidden="true">↗</span></button>
+        <p class="form-status" data-form-status aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="footer-brand" href="#top">WRAPPED.CO</a>
-    <p>Thoughtful fragrance for everyday rooms.</p>
-    <div class="footer-links">
-      <a href="#care">Candle care</a>
-      <a href="mailto:hello@wrapped.co?subject=Shipping%20question">Shipping questions</a>
-      <a href="mailto:hello@wrapped.co?subject=Returns%20question">Returns</a>
-    </div>
-    <p class="copyright">© <span data-year></span> WRAPPED.CO</p>
+    <a class="footer-brand" href="#top"><img src="assets/wrappedco-ribbon-mark.svg" alt="" width="25" height="37">WRAPPED.CO</a>
+    <div><a href="mailto:hello@wrapped.co">hello@wrapped.co</a><a href="https://www.instagram.com/wrapped.co" rel="noreferrer">Instagram</a></div>
+    <p>Worcester, Massachusetts<br>© <span data-year></span> WRAPPED.CO</p>
   </footer>
 </body>
 </html>
