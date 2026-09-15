@@ -118,15 +118,23 @@
     </section>
 
     <section class="order-section" id="order" aria-labelledby="order-title">
-      <div class="order-intro"><p class="eyebrow">Order</p><h2 id="order-title">Your candle,<br>wrapped.</h2><p>Select the details below. WhatsApp will open with your order request ready to send.</p></div>
-      <form class="order-form" data-order-form data-business-whatsapp="">
+      <div class="order-intro">
+        <p class="eyebrow">Order</p><h2 id="order-title">Your candle,<br>wrapped.</h2>
+        <p>Select the details below. WhatsApp will open with your order request ready to send.</p>
+        <div class="direct-contact" aria-label="WRAPPED.CO contact details">
+          <a href="https://wa.me/15085028642" rel="noreferrer"><span>WhatsApp</span>+1 (508) 502-8642</a>
+          <a href="https://www.instagram.com/wrapped.candle" rel="noreferrer"><span>Instagram</span>@wrapped.candle</a>
+          <a href="mailto:wrappedcandle@gmail.com"><span>Email</span>wrappedcandle@gmail.com</a>
+        </div>
+      </div>
+      <form class="order-form" data-order-form data-business-whatsapp="15085028642">
         <label><span>Scent</span><select name="scent" data-order-scent><option>No. 01 Warm Cocoa</option><option>No. 02 Cedar Tea</option><option>No. 03 Clean Linen</option></select></label>
         <div class="form-row">
           <label><span>Size</span><select name="size"><option>10 oz / 283 g</option></select></label>
           <label><span>Quantity</span><select name="quantity"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
         </div>
         <label><span>Your name</span><input type="text" name="customerName" autocomplete="name" required placeholder="Name"></label>
-        <label><span>Your WhatsApp number</span><input type="tel" name="customerWhatsApp" autocomplete="tel" required inputmode="tel" placeholder="+1 508 000 0000"></label>
+        <label><span>Your WhatsApp number</span><input type="tel" name="customerWhatsApp" autocomplete="tel" required inputmode="tel" placeholder="+1 phone number"></label>
         <label><span>Order note <small>Optional</small></span><textarea name="note" rows="3" placeholder="Pickup, delivery, or gift note"></textarea></label>
         <button class="submit-button" type="submit">Send via WhatsApp <span aria-hidden="true">↗</span></button>
         <p class="form-status" data-form-status aria-live="polite"></p>
@@ -136,7 +144,7 @@
 
   <footer class="site-footer">
     <a class="footer-brand" href="#top"><img src="assets/wrappedco-ribbon-mark.svg" alt="" width="25" height="37">WRAPPED.CO</a>
-    <div><a href="mailto:hello@wrapped.co">hello@wrapped.co</a><a href="https://www.instagram.com/wrapped.co" rel="noreferrer">Instagram</a></div>
+    <div><a href="https://wa.me/15085028642" rel="noreferrer">+1 (508) 502-8642</a><a href="https://www.instagram.com/wrapped.candle" rel="noreferrer">@wrapped.candle</a><a href="mailto:wrappedcandle@gmail.com">wrappedcandle@gmail.com</a></div>
     <p>Worcester, Massachusetts<br>© <span data-year></span> WRAPPED.CO</p>
   </footer>
 </body>

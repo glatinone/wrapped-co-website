@@ -104,8 +104,12 @@ h1 { max-width: 650px; margin: 20px 0 28px; font-size: clamp(4rem, 6vw, 6.7rem);
 .story div > p { max-width: 700px; margin: 0; color: var(--smoke); font-family: var(--serif); font-size: 1.15rem; }
 .order-section { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(60px, 10vw, 170px); padding: clamp(90px, 10vw, 160px) clamp(24px, 7vw, 120px); color: var(--paper); background: var(--ink-soft); }
 .order-intro h2 { margin: 26px 0 30px; font-size: clamp(4rem, 7vw, 7.2rem); letter-spacing: -.05em; }
-.order-intro > p:last-child { max-width: 450px; color: #bcb1a5; font-family: var(--serif); font-size: 1.08rem; }
+.order-intro > p:not(.eyebrow) { max-width: 450px; color: #bcb1a5; font-family: var(--serif); font-size: 1.08rem; }
 .order-section .eyebrow { color: var(--brass-light); }
+.direct-contact { display: grid; max-width: 470px; margin-top: 42px; border-top: 1px solid rgba(255,255,255,.16); }
+.direct-contact a { display: grid; grid-template-columns: 100px 1fr; gap: 16px; padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,.16); font-family: var(--serif); }
+.direct-contact a span { color: #9f9488; font-family: var(--sans); text-transform: uppercase; letter-spacing: .13em; font-size: .75rem; }
+.direct-contact a:hover { color: var(--brass-light); }
 .order-form { display: grid; gap: 22px; align-content: start; }
 .order-form label > span { display: flex; justify-content: space-between; margin-bottom: 8px; color: #c5baae; text-transform: uppercase; letter-spacing: .13em; font-size: .75rem; }
 .order-form label > span small { font-size: inherit; }
@@ -120,7 +124,7 @@ h1 { max-width: 650px; margin: 20px 0 28px; font-size: clamp(4rem, 6vw, 6.7rem);
 .site-footer { display: grid; grid-template-columns: 1fr auto auto; gap: 50px; align-items: center; padding: 42px clamp(24px, 5vw, 80px); color: #9e9387; background: var(--ink-soft); border-top: 1px solid rgba(255,255,255,.12); font-size: .76rem; }
 .footer-brand { display: inline-flex; align-items: center; gap: 14px; color: var(--paper); font-family: var(--serif); font-size: 1.35rem; letter-spacing: .22em; }
 .footer-brand img { width: 25px; }
-.site-footer > div { display: flex; gap: 28px; text-transform: uppercase; letter-spacing: .12em; }
+.site-footer > div { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; text-transform: uppercase; letter-spacing: .12em; }
 .site-footer p { margin: 0; text-align: right; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media (max-width: 1100px) {
