@@ -64,6 +64,28 @@ h1 { max-width: 650px; margin: 20px 0 28px; font-size: clamp(4rem, 6vw, 6.7rem);
 .scent-item ul { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 30px; padding: 0; list-style: none; font-family: var(--serif); }
 .scent-item li:not(:last-child)::after { content: '·'; margin-left: 20px; opacity: .55; }
 .scent-item button { align-self: flex-start; padding: 0 0 5px; color: inherit; background: transparent; border: 0; border-bottom: 1px solid currentColor; text-transform: uppercase; letter-spacing: .13em; font-size: .75rem; font-weight: 600; }
+.scent-showcase { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(420px, .92fr); min-height: 720px; border: 1px solid var(--line); background: var(--ink); }
+.scent-preview { position: relative; min-width: 0; margin: 0; overflow: hidden; background: #1b1713; }
+.scent-preview img { width: 100%; height: 100%; object-fit: cover; transition: opacity .18s ease; }
+.scent-preview img.is-changing { opacity: .35; }
+.scent-preview figcaption { position: absolute; left: 24px; right: 24px; bottom: 22px; display: flex; justify-content: space-between; align-items: end; gap: 24px; padding: 17px 18px; color: var(--paper); background: rgba(21,19,16,.78); border: 1px solid rgba(255,255,255,.16); backdrop-filter: blur(8px); }
+.scent-preview figcaption span { text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; }
+.scent-preview figcaption strong { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; }
+.scent-panel { display: grid; grid-template-rows: auto 1fr; color: var(--paper); background: var(--ink); border-left: 1px solid rgba(255,255,255,.15); }
+.scent-tabs { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid rgba(255,255,255,.16); }
+.scent-tab { display: grid; gap: 7px; min-width: 0; min-height: 136px; padding: 20px 16px; color: #a99f94; background: transparent; border: 0; border-right: 1px solid rgba(255,255,255,.16); text-align: left; }
+.scent-tab:last-child { border-right: 0; }
+.scent-tab span, .scent-tab small { text-transform: uppercase; letter-spacing: .13em; font-size: .75rem; }
+.scent-tab strong { align-self: end; color: var(--paper); font-family: var(--serif); font-size: 1rem; font-weight: 400; }
+.scent-tab:hover, .scent-tab.is-selected { color: var(--ink); background: var(--brass-light); }
+.scent-tab:hover strong, .scent-tab.is-selected strong { color: var(--ink); }
+.scent-details { display: flex; flex-direction: column; justify-content: center; padding: clamp(38px, 5vw, 72px); }
+.scent-details > p { max-width: 490px; margin: 0 0 38px; color: #d4cabf; font-family: var(--serif); font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.4; }
+.scent-details dl { margin: 0; border-top: 1px solid rgba(255,255,255,.16); }
+.scent-details dl div { display: grid; grid-template-columns: 90px 1fr; gap: 18px; padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+.scent-details dt { color: #9f9488; text-transform: uppercase; letter-spacing: .13em; font-size: .75rem; }
+.scent-details dd { margin: 0; font-family: var(--serif); }
+.scent-details button { display: flex; justify-content: space-between; width: 100%; margin-top: 32px; padding: 16px 0 8px; color: var(--paper); background: transparent; border: 0; border-bottom: 1px solid var(--paper); text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 600; }
 .size-section { display: grid; grid-template-columns: 1.1fr .9fr; min-height: 720px; color: var(--paper); background: var(--ink); }
 .size-image { min-height: 580px; background: linear-gradient(90deg, transparent 70%, rgba(21,19,16,.72)), url('assets/wrappedco-collection-system.png') center / cover; }
 .size-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(60px, 7vw, 115px); }
@@ -130,6 +152,13 @@ h1 { max-width: 650px; margin: 20px 0 28px; font-size: clamp(4rem, 6vw, 6.7rem);
   .section-heading h2, .story h2 { font-size: clamp(3.2rem, 14vw, 4.5rem); }
   .scent-list { grid-template-columns: 1fr; }
   .scent-item { min-height: 430px; }
+  .scent-showcase { grid-template-columns: 1fr; min-height: 0; }
+  .scent-preview { aspect-ratio: 1 / 1; }
+  .scent-panel { border-left: 0; border-top: 1px solid rgba(255,255,255,.16); }
+  .scent-tabs { overflow-x: auto; }
+  .scent-tab { min-width: 150px; }
+  .scent-details { padding: 48px 22px 58px; }
+  .scent-details dl div { grid-template-columns: 72px 1fr; }
   .size-section { grid-template-columns: 1fr; }
   .size-image { min-height: 460px; background-image: linear-gradient(0deg, rgba(21,19,16,.45), transparent 40%), url('assets/wrappedco-collection-system.png'); }
   .size-copy { padding: 80px 22px; }

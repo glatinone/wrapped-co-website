@@ -52,10 +52,53 @@
 
     <section class="scents section-shell" id="scents" aria-labelledby="scents-title">
       <div class="section-heading"><p class="section-number">01 / Scents</p><div><h2 id="scents-title">Pick the mood.</h2><p>Each scent is designed to feel clear in a room, never overwhelming.</p></div></div>
-      <div class="scent-list">
-        <article class="scent-item scent-dark"><p>No. 01 · Gourmand</p><h3>Warm Cocoa</h3><ul><li>Cocoa</li><li>Vanilla bean</li><li>Smoked sugar</li></ul><button type="button" data-choose-scent="No. 01 Warm Cocoa">Choose this scent</button></article>
-        <article class="scent-item scent-brass"><p>No. 02 · Woods</p><h3>Cedar Tea</h3><ul><li>Cedar</li><li>Amber</li><li>Black tea</li></ul><button type="button" data-choose-scent="No. 02 Cedar Tea">Choose this scent</button></article>
-        <article class="scent-item scent-ivory"><p>No. 03 · Clean</p><h3>Clean Linen</h3><ul><li>Bergamot</li><li>Washed linen</li><li>White musk</li></ul><button type="button" data-choose-scent="No. 03 Clean Linen">Choose this scent</button></article>
+      <div class="scent-showcase">
+        <figure class="scent-preview">
+          <img src="assets/scent-warm-cocoa-v2.png" alt="WRAPPED.CO Warm Cocoa candle with cocoa beans and vanilla" width="1254" height="1254" data-preview-image>
+          <figcaption><span data-preview-family>No. 01 · Gourmand</span><strong data-preview-name>Warm Cocoa</strong></figcaption>
+        </figure>
+
+        <div class="scent-panel">
+          <div class="scent-tabs" aria-label="Choose a scent">
+            <button class="scent-tab is-selected" type="button" aria-pressed="true"
+              data-preview-scent="No. 01 Warm Cocoa"
+              data-preview-image-src="assets/scent-warm-cocoa-v2.png"
+              data-preview-image-alt="WRAPPED.CO Warm Cocoa candle with cocoa beans and vanilla"
+              data-preview-family-label="No. 01 · Gourmand"
+              data-preview-name-label="Warm Cocoa"
+              data-preview-description="Soft cocoa and vanilla, grounded by a trace of smoked sugar."
+              data-preview-notes="Cocoa · Vanilla bean · Smoked sugar"
+              data-preview-mood="Warm · Comforting"><span>01</span><strong>Warm Cocoa</strong><small>Gourmand</small></button>
+            <button class="scent-tab" type="button" aria-pressed="false"
+              data-preview-scent="No. 02 Cedar Tea"
+              data-preview-image-src="assets/scent-cedar-tea-v2.png"
+              data-preview-image-alt="WRAPPED.CO Cedar Tea candle with cedar and black tea"
+              data-preview-family-label="No. 02 · Woods"
+              data-preview-name-label="Cedar Tea"
+              data-preview-description="Dry cedar and amber softened by the quiet depth of black tea."
+              data-preview-notes="Cedar · Amber · Black tea"
+              data-preview-mood="Woody · Grounded"><span>02</span><strong>Cedar Tea</strong><small>Woods</small></button>
+            <button class="scent-tab" type="button" aria-pressed="false"
+              data-preview-scent="No. 03 Clean Linen"
+              data-preview-image-src="assets/scent-clean-linen-v2.png"
+              data-preview-image-alt="WRAPPED.CO Clean Linen candle with bergamot peel and natural linen"
+              data-preview-family-label="No. 03 · Clean"
+              data-preview-name-label="Clean Linen"
+              data-preview-description="Bright bergamot, washed linen, and a sheer layer of white musk."
+              data-preview-notes="Bergamot · Washed linen · White musk"
+              data-preview-mood="Fresh · Airy"><span>03</span><strong>Clean Linen</strong><small>Clean</small></button>
+          </div>
+
+          <div class="scent-details" aria-live="polite">
+            <p data-preview-description>Soft cocoa and vanilla, grounded by a trace of smoked sugar.</p>
+            <dl>
+              <div><dt>Notes</dt><dd data-preview-notes>Cocoa · Vanilla bean · Smoked sugar</dd></div>
+              <div><dt>Mood</dt><dd data-preview-mood>Warm · Comforting</dd></div>
+              <div><dt>Size</dt><dd>10 oz / 283 g</dd></div>
+            </dl>
+            <button type="button" data-preview-order data-choose-scent="No. 01 Warm Cocoa">Order Warm Cocoa <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -75,17 +118,17 @@
     </section>
 
     <section class="order-section" id="order" aria-labelledby="order-title">
-      <div class="order-intro"><p class="eyebrow">Order</p><h2 id="order-title">Your candle,<br>wrapped.</h2><p>Select the details below. We will open an email with your order request ready to send.</p></div>
-      <form class="order-form" data-order-form>
+      <div class="order-intro"><p class="eyebrow">Order</p><h2 id="order-title">Your candle,<br>wrapped.</h2><p>Select the details below. WhatsApp will open with your order request ready to send.</p></div>
+      <form class="order-form" data-order-form data-business-whatsapp="">
         <label><span>Scent</span><select name="scent" data-order-scent><option>No. 01 Warm Cocoa</option><option>No. 02 Cedar Tea</option><option>No. 03 Clean Linen</option></select></label>
         <div class="form-row">
           <label><span>Size</span><select name="size"><option>10 oz / 283 g</option></select></label>
           <label><span>Quantity</span><select name="quantity"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
         </div>
         <label><span>Your name</span><input type="text" name="customerName" autocomplete="name" required placeholder="Name"></label>
-        <label><span>Email</span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label><span>Your WhatsApp number</span><input type="tel" name="customerWhatsApp" autocomplete="tel" required inputmode="tel" placeholder="+1 508 000 0000"></label>
         <label><span>Order note <small>Optional</small></span><textarea name="note" rows="3" placeholder="Pickup, delivery, or gift note"></textarea></label>
-        <button class="submit-button" type="submit">Send order request <span aria-hidden="true">↗</span></button>
+        <button class="submit-button" type="submit">Send via WhatsApp <span aria-hidden="true">↗</span></button>
         <p class="form-status" data-form-status aria-live="polite"></p>
       </form>
     </section>
